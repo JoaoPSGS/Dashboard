@@ -40,32 +40,38 @@
              </header>
              <div class="main-content">
                 <div class="panel-row-faleConosco">
+
+                    <div class="title">
+                        Fale conosco
+                    </div>
+
                     <form>
+                        
                         <div class="form-group">
                             <label for="txtNome">Nome</label>
                             <br>
-                            <input type="text" id="txtNome" />
+                            <input type="text" name="txtNome" id="txtNome" required>
+                            <br>
                             <br>
                         </div>
                         <div class="form-group">
-                            <label for="txtEmail">E-mail</label>
+                            <label for="txtEmail" >E-mail</label>
                             <br>
-                            <input type="text" id="txtEmail" />
+                            <input type="text" name="textEmail" id="txtEmail" required>
+                            <br>
                             <br>
                         </div>
-                      </form>
-
-                      <form>
-                        <label for="txtComentario">Comentários</label>
+                      
+                        <label class="txtComentario">Comentários</label>
                         <br>
-                        <textarea id="txtComentario"> </textarea>
+                        <textarea rows="5"id="txtComentario" required> </textarea>
                         </form>
 
                         <div class="form-group">
                         <form>
-                        
-                            <button type="submit">Enviar</button>
-                            
+                        <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset"class="botao">Limpar<button>
                         </form>
                     </div>
                 </div>
@@ -75,9 +81,7 @@
             
 
             <footer>
-                Copyright © 2022 | <a href="https://github.com/JoaoPSGS/Dashboard" target="_blank" style="text-decoration:none">João Pedro Sobrinho </a>
-                
-                    
+                Copyright © 2022 | <a href="https://github.com/JoaoPSGS/Dashboard" target="_blank" style="text-decoration:none"> João Pedro Sobrinho e Aline Jardim da Silva </a>
             </footer>
           </main>
      </div>
