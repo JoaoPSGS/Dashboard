@@ -1,0 +1,118 @@
+.register-parent {
+    height: 100%;
+    padding: 0 2%;
+    background: rgb(193, 236, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register {
+    width: 100%;
+    max-width: 400px;
+    height: 320px;
+    padding: 20px 15px 40px 15px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 3px 3px #7db959; 
+    box-shadow: 0px 0px 3px 3px #7db959;
+    margin: 100px;
+}
+
+.register_dois {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    padding: 20px 15px 40px 15px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 3px 3px #7db959; 
+    box-shadow: 0px 0px 3px 3px #7db959;
+    margin: 10px;
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+    white-space: nowrap; 
+}
+
+.register-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-title img {
+    width: 50px;
+    height: 50px;
+}
+
+.register-title h2 {
+    font-size: 20px;
+    padding: 0px 0px 20px;
+}
+
+.register .form-group label {
+    font-size: 16px;
+}
+
+.register .form-group input {
+    font-size: 16px;
+}
+
+.register button {
+    background: rgb(160, 229, 151);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+
+}
+
+.register button:hover {
+    color: black;
+    transform: scale(1.05);
+    transition: .2s;
+    font-size: 16px;
+    border: none;
+}
+
+@media screen and (max-height: 100px) {
+    .register {
+        width: 50%;
+        height: 100%;
+    }
+
+    .register-parent {
+        height: 100%;
+        padding: 0 2%;
+        background: rgb(160, 218, 152);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.form-control{
+    text-align: center;
+}
+#input_email_user {
+    width: 100%;
+}
+#input_senha_user{
+    width: 100%;
+}
+#input_senha_user_m{
+    width: 100%;
+}
+.painel_cad{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background: linear-gradient(135deg, rgb(253, 253, 253), rgb(183, 233, 117));
+    height: 100%;
+}
+
+.seta_voltar{
+
+    height: 30px;
+    color: black;
+}

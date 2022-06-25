@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+  <link rel="icon" href="../image/title.png">
+  
+  <title>Dashboard</title>
+</head>
+
+<body>
+  
+
+  <div class="painel_cad">
+
+    <div class="register">
+      <div class="register-title">
+        <img src="../image/title.png" alt="">
+        <h2>Security Analysis</h2>
+      </div>
+      <div class="item">
+        <div class="dados_register">
+          <div class="user">
+            <h3>Email</h3>
+            <input type="email" id="input_email_user">
+          </div>
+          <div class="senha">
+            <h3>Senha</h3>
+            <input type="password" id="input_senha_user">
+          </div>
+          <div class="senha">
+            <h3>Confirmar Senha</h3>
+            <input type="password" id="input_senha_user_m">
+          </div>
+          <a href="../index.html" ><i class="fa-solid fa-arrow-left-long seta_voltar"></i></a>
+          <button class="item enviar_form btn_ui" id="registerButton" onclick="registrarUsuario()">Enviar</button>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/real-time-database.js"></script>
+  <script src="../js/register.js"></script>
+  <script src="../fontawesome/js/all.min.js"></script>
+
+
+  <script>
+    src = "../plugins/bootstrap/js/bootstrap.min.js"
+  </script>
+
+</body>
+
+</html>

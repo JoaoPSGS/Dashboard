@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="icon" href="../image/title.png">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../image/title.png" alt="">
+                <h2>Security Analysis</h2>
+            </div>
+            <div class="menu">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark btn-lg col-12 btn-custom mt-15" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Usuários Cadastrados
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Usuários</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="div_tabela_modal_clientes">
+
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Pedro Henrique</td>
+                                            <td>pedro@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Julia Silva</td>
+                                            <td>julia@hotmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Bianca Ferreira</td>
+                                            <td>bianca@outlook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Heloisa Marques</td>
+                                            <td>helo@hotmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark btn-lg col-12 bnt-custom" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">
+                    Registros
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Registros</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="div_tabela_modal_clientes">
+
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Idade</th>
+                                            <th scope="col">Genero</th>
+                                            <th scope="col">Empresa</th>
+                                            <th scope="col">Salário</th>
+                                            <th scope="col">Acidente</th>
+                                            <th scope="col">Experiencia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Pedro Henrique</td>
+                                            <td>25</td>
+                                            <td>Masculino</td>
+                                            <td>Kalunga</td>
+                                            <td>de R$1001,00 a R$2500,00</td>
+                                            <td>Não</td>
+                                            <td>3 - 5 anos</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Julia Silva</td>
+                                            <td>20</td>
+                                            <td>Feminino</td>
+                                            <td>Medley</td>
+                                            <td>de R$1001,00 a R$2500,00</td>
+                                            <td>Não</td>
+                                            <td>3 - 5 anos</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Bianca Ferreira</td>
+                                            <td>31</td>
+                                            <td>Feminino</td>
+                                            <td>Google</td>
+                                            <td>de R$1001,00 a R$2500,00</td>
+                                            <td>Sim</td>
+                                            <td>mais de 5 anos</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Heloisa Marques</td>
+                                            <td>18</td>
+                                            <td>Feminino</td>
+                                            <td>Maenis</td>
+                                            <td>até R$1000,00</td>
+                                            <td>Sim</td>
+                                            <td>0 - 1 ano</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"> <i class="fa-solid fa-house quemSomos"></i>Início</a>
+                <a href="registerUser.html"> <i class="fa-solid fa-user-plus quemSomos"></i>Novo Registro</a>
+                <a href="dashboardFaleConosco.html"> <i class="fa-solid fa-comment-dots quemSomos"></i>Fale Conosco</a>
+                <a href="QuemSomos.html"><i class="fa-solid fa-people-group quemSomos"></i>Quem Somos</a>
+                <a href="../index.html"> <i class="fa-solid fa-right-from-bracket quemSomos"></i>Sair</a>
+            </header>
+            <div class="main-content">
+                <div class="panel-row-faleConosco">
+                    <form>
+                        <div class="form-group">
+                            <label for="txtNome">Nome</label>
+                            <br>
+                            <input type="text" id="txtNome" />
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail">E-mail</label>
+                            <br>
+                            <input type="text" id="txtEmail" />
+                            <br>
+                        </div>
+                    </form>
+
+                    <form>
+                        <label for="txtComentario">Comentários</label>
+                        <br>
+                        <textarea id="txtComentario"> </textarea>
+                    </form>
+
+                    <div class="form-group">
+                        <button class="item enviar_form btn" onclick="faleConosco()">Enviar</button>
+                        <button class="item enviar_form btn">Limpar</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                Copyright © 2022 | João Pedro / Aline Jardim
+
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/real-time-database.js"></script>
+    <script src="../fontawesome/js/all.min.js"></script>
+
+</body>
+
+</html>
